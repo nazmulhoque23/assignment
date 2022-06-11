@@ -1,0 +1,60 @@
+.card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                padding: 16px;
+                margin: auto;
+                text-align: center;
+                font-family: arial;
+                background-color: #f1f1f1;
+            }
+            .column {
+                float: left;
+                width: 10%;
+                padding: 0 10px;
+            }
+
+            .header{
+                display: flex;
+                justify-content: center;
+                position: relative;
+
+            }
+
+            .header h1{
+                flex-grow: 1;
+                
+            }
+
+            .header button{
+                
+                padding: 15px;
+                display: inline-block;
+                margin: 4px 2px;
+                float: left;
+                width: 100px;
+                height: 10px;
+                transform: translateX(-1000%);
+                margin-top: 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+        form button{
+                background-color: #4CAF50; /* Green */
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                float: left;
+                margin-top: 25 px;
+                transform: translateX(5000%);
+                transform: translateY(-150%);
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
