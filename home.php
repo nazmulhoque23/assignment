@@ -51,22 +51,19 @@
     	
 		
 		<?php 
-		//$checked = array();
-		$checked = (isset($_POST['myCheck']))?array($_POST['myCheck']):" "; 
 		
-		$valCount = count($checked); 
+		$checked =(isset($_POST['myCheck']))? $_POST['myCheck']:""; 
+		
+		$valCount = !empty($checked)? count($checked,0):""; 
 		
 		for($i = 0; $i<$valCount; $i++){
 			//$del_id = $valCount[$i];
 			$sql = "DELETE FROM `products` WHERE SKU = '" . $_POST['myCheck'][$i] . "'";
 		
 			$deleteData = $dbTable->connect()->exec($sql);	
-			
+			header("location:home.php");	
 		}
-		header("location:home.php");
 		
-			
-			
 
 		
 		
